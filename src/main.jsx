@@ -12,7 +12,7 @@ import LogIn, { login } from "./components/LogIn.jsx";
 import SignUp, { registerUser } from "./components/SignUp.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Chatroom from "./components/Chatroom.jsx";
-import { logout } from "./components/Logout.jsx";
+import { logout } from "./components/LogOut.jsx";
 
 const router = createBrowserRouter([
   {

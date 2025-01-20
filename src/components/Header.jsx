@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useAuth } from "../hooks/auth";
 import AppName from "./AppName";
-import LogOut from "./Logout";
+import LogOut from "./LogOut";
 
 const Header = () => {
   const { isAuthenticated } = useAuth();
