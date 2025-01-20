@@ -1,0 +1,40 @@
+.loginContainer {
+  background-color: #2a2a2a !important;
+}
+
+.loginLabel {
+  color: #f8f9fa !important;
+}
+
+.loginInput {
+  background-color: #3a3a3a !important;
+  color: #f8f9fa !important;
+  border: 1px solid #555 !important;
+}
+
+.loginInput::placeholder {
+  color: #8a8a8a !important;
+}
+
+.loginInput:focus {
+  background-color: #3a3a3a !important;
+  color: #f8f9fa !important;
+  border-color: #4caf50 !important;
+  box-shadow: none !important;
+}
+
+.loginBtn {
+  color: #f8f9fa !important;
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+
+.loginBtn:hover {
+  color: #f8f9fa !important;
+  background-color: #45a049 !important;
+  border-color: #45a049 !important;
+}
+
+.textColor {
+  color: #f8f9fa !important;
+}

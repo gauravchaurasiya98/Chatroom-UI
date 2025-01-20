@@ -1,0 +1,37 @@
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  transition: left 0.5s ease;
+  z-index: 1050;
+  background-color: #111b21;
+  border-right: 1px solid rgba(134, 150, 160, 0.15);
+}
+
+.sidebar-container.open {
+  left: 0;
+}
+
+@media (min-width: 576px) {
+  .sidebar-container {
+    position: static;
+    width: 25%;
+    transition: none;
+  }
+}
+
+.sidebar-header {
+  padding-left: 12px;
+  border-bottom: 1px solid rgba(134, 150, 160, 0.15);
+}
+
+.close-button {
+  border: none;
+  background: none;
+  color: #ffffffcc;
+}
+
+.close-button:hover {
+  color: #ffffffff;
+}

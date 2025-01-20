@@ -1,0 +1,48 @@
+.bg-home {
+  background-color: #111b21;
+}
+
+.chat-header {
+  background-color: #202c33;
+  box-shadow: 0 1px 3px rgba(11, 20, 26, 0.4);
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #202c33;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  background-color: #2a3942;
+  color: #fff;
+  resize: none;
+}
+
+.chat-input:focus {
+  outline: none;
+}
+
+.send-button {
+  background-color: #2a3942;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  color: #fff;
+}
+
+.send-button:hover {
+  background-color: #005d4b;
+}
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  color: #fff;
+}
