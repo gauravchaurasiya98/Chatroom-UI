@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useLocation, useNavigate } from "react-router";
+// import { useLocation, useNavigate } from "react-router";
 import api from "../services/apiService";
 import { setAuthToken, setUser } from "../store/authSlice";
 
@@ -9,8 +9,8 @@ export const useAuth = () => useSelector((state) => state.auth);
 
 export const useAuthChecked = () => {
   const dispatch = useDispatch();
-  const location = useLocation();
-  const navigate = useNavigate();
+  // const location = useLocation();
+  // const navigate = useNavigate();
   const [isAuthChecked, setAuthChecked] = useState(false); // Track auth status check
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export const useAuthChecked = () => {
           error.response?.status,
           error.response?.data?.message || "Unknown error"
         );
-        navigate(`/login?from=${encodeURIComponent(location.pathname)}`);
+        // navigate(`/login?from=${encodeURIComponent(location.pathname)}`);
       } finally {
         setAuthChecked(true);
       }
