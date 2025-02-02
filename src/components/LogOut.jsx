@@ -1,4 +1,4 @@
-import { Form, redirect } from "react-router";
+import { Form } from "react-router";
 import api from "../services/apiService";
 import { clearAuth } from "../store/authSlice";
 import Store from "../store/chatroomStore";
@@ -8,7 +8,7 @@ export const logout = async ({ request }) => {
     const response = await api.post("/user/logout", {});
     if (response?.status === 200) {
       Store.dispatch(clearAuth());
-      return redirect("/login");
+      window.location.href = "/login";
     } else {
       console.error("Something went wrong:", response?.data || response);
     }
