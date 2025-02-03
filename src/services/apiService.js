@@ -3,7 +3,10 @@ import Cookies from "js-cookie";
 import Store from "../store/chatroomStore";
 import { setAuthToken } from "../store/authSlice";
 
-const baseURL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:3000";
+const baseURL =
+  process.env.VITE_API_BASE_URL ||
+  import.meta.env.VITE_API_BASE_URL ||
+  "http://127.0.0.1:3000";
 
 // Utility to get values from cookies
 export const getValueFromCookie = (key) => {
